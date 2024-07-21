@@ -1,0 +1,12 @@
+version: 'latest'
+services:
+  develop:
+    build: .
+    tty: true
+    stdin_open: true
+    working_dir: /ecs-learn
+    command: /bin/bash
+    # image: golang:latest
+    volumes:
+      - .:/ecs-learn
+    image: ecs-learn
