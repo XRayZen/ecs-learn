@@ -1,5 +1,5 @@
 
-# 今度は標準のECRリソースを使う
+# 標準のECRリソースを使う
 resource "aws_ecr_repository" "ecr" {
   name                 = var.repository_name
   image_tag_mutability = "MUTABLE"

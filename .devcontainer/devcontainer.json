@@ -31,7 +31,9 @@
 				"shardulm94.trailing-spaces",
 				"redhat.vscode-yaml",
 				"ms-azuretools.vscode-docker",
-				"hediet.vscode-drawio"
+				"hediet.vscode-drawio",
+				"saoudrizwan.claude-dev",
+				"Continue.continue"
 			],
 			"settings": {
 				"go.goroot": "/usr/local/go",

@@ -20,7 +20,6 @@ RUN go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
 RUN go install golang.org/x/tools/gopls@latest
 
 # DockerCLIをインストール 実行しているチップが armなら：arm64 x86なら：amd64
-# 
 RUN apt-get update && apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 RUN echo \

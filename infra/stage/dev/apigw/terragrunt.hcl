@@ -19,24 +19,6 @@ dependency "lambda_read"{
     }
 }
 
-dependency "lambda_site"{
-    config_path = "../lambda_site"
-
-    mock_outputs = {
-        lambda_function_invoke_arn = "arn:aws:lambda:us-east-1:123456789012:function:lambda_site"
-        lambda_function_name = "lambda_site"
-    }
-}
-
-dependency "lambda_user"{
-    config_path = "../lambda_user"
-
-    mock_outputs = {
-        lambda_function_invoke_arn = "arn:aws:lambda:us-east-1:123456789012:function:lambda_user"
-        lambda_function_name = "lambda_user"
-    }
-}
-
 inputs = {
     project_name = local.env.locals.project_name
     api_gw_name = "API_Gateway_for_${local.env.locals.project_name}_${local.env.locals.stage}"

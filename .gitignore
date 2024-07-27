@@ -1,5 +1,6 @@
 .env
 .envrc
+secret.md
 
 .terraform
 .DS_Store

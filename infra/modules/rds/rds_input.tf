@@ -3,6 +3,7 @@ variable "vpc_id" {
   type        = string
   description = "(optional) describe your variable"
 }
+
 # 配置するavailability zone
 variable "availability_zone" {
   type        = string

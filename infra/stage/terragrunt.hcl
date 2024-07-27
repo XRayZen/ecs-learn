@@ -1,8 +1,8 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket = "terraform-state-feedays-cloud"
-    key    = "feedays-cloud/${path_relative_to_include()}.tfstate"
+    bucket = "terraform-state-ecs-learn"
+    key    = "ecs-learn/${path_relative_to_include()}.tfstate"
     region = "us-east-1"
     encrypt = true
     dynamodb_table = "terraform-state-lock"
