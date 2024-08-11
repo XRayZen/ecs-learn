@@ -2,7 +2,10 @@
 
 
 
-
+resource "aws_ecs_cluster_capacity_providers" "provider" {
+  cluster_name       = aws_ecs_cluster.terafform_cluster.name
+  capacity_providers = ["FARGATE", "FARGATE_SPOT"]
+}
 
 
 resource "aws_ecs_capacity_provider" "test" {
@@ -20,3 +23,14 @@ resource "aws_ecs_capacity_provider" "test" {
     }
   }
 }
+
+
+resource "aws_ecs_cluster" "foo" {
+  name = "${var.ecs_cluster_name}"
+
+  setting {
+    name  = "containerInsights"
+    value = "enabled"
+  }
+}
+
